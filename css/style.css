@@ -4,5 +4,109 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: var(--color-1);
+}
+
+header {
+    margin: 43px 24px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header div img:nth-child(1){
+    padding: 8px 6.7px;
+}
+
+header div img:nth-child(2){
+    padding: 8px 10.33px;
+}
+
+header h1 {
+    font-family: "Inter-SemiBold";
+    font-size: 30px;
+}
+
+header h1 span {
+    color: var(--color-2);
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.searchBar {
+    margin: 0px 21px;
+    padding: 12px;
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.searchBar svg {
+    width: 17px;
+    margin-bottom: -3px;
+}
+
+.searchBar input {
+    border: none;
+    background: none;
+    font-family: "Inter-Regular";
+    font-size: 12px;
+}
+
+.searchBar input::placeholder {
+    color: black;
+}
+
+
+.searchLeft {
+    display: flex;
+    gap: 12px;
+}
+
+.carrouselOpt {
+    display: flex;
+    gap: 12px;
+    overflow: scroll;
+}
+
+.carrouselOpt a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.5px 14.5px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-family: "Inter-Regular";
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.carrouselOpt a:nth-child(1){
+    background: var(--color-8);
+    margin-left: 20px;
+
+}
+
+.carrouselOpt a:nth-child(2){
+    background: var(--color-9);
+}
+
+.carrouselOpt a:nth-child(3){
+    background: var(--color-10);
+}
+
+.carrouselOpt a:nth-child(4){
+    background: var(--color-11);
+    margin-right: 20px;
 }
