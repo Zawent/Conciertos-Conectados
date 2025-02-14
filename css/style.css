@@ -77,6 +77,8 @@ nav {
     display: flex;
     gap: 12px;
     overflow: scroll;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .carrouselOpt a{
@@ -90,12 +92,11 @@ nav {
     font-family: "Inter-Regular";
     border-radius: 8px;
     white-space: nowrap;
+    
 }
 
 .carrouselOpt a:nth-child(1){
     background: var(--color-8);
-    margin-left: 20px;
-
 }
 
 .carrouselOpt a:nth-child(2){
@@ -108,5 +109,125 @@ nav {
 
 .carrouselOpt a:nth-child(4){
     background: var(--color-11);
-    margin-right: 20px;
+}
+
+.ladoMedio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 22px;
+}
+
+.ladoMedio div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+.ladoMedio div h2:nth-child(1){
+    font-family: "Inter-SemiBold";
+    font-size: 14px;
+    color: black;
+}
+
+.ladoMedio div h2:nth-child(2){
+    font-family: "Inter-Regular";
+    font-size: 12px;
+    color: var(--color-3);
+    font-weight: 100;
+}
+
+.ladoMedio article {
+    display: flex;
+    gap: 12px;
+    overflow: scroll;
+}
+
+.card {
+    position: relative;
+    width: 90svw;
+    display: flex;
+    gap: 20px;
+}
+
+.img11 {
+    width: 87.4svw;
+
+}
+
+.allText {
+    position: absolute;
+    padding: 16.5px 13px;
+    bottom: 8px;
+    left: 7px;
+    background: var(--color-12);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    justify-content: space-between;
+    gap: 20px;
+    width: 95%;
+    display: flex;
+}
+
+.text {
+    display: flex; /* Cambia inline por flex para que flexbox funcione */
+    flex-direction: column;
+    gap: 6px;
+    width: 47svw; /* Mantiene un tamaño definido */
+    min-width: 0; /* Clave para evitar problemas de flexbox */
+}
+
+.text p {
+    font-family: "Inter-SemiBold";
+    color: var(--color-1);
+    font-size: 12px;
+    display: block; 
+    width: 100%; 
+    overflow: hidden;    
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
+}
+
+.text p:nth-child(2){
+    font-family: "Inter-Regular";
+}
+
+.text p:nth-child(3){
+    font-family: "Inter-Regular";
+}
+
+.text p img{
+    margin-bottom: -2px;
+    margin-right: 8px;
+}
+
+.moreText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    flex: 1; /* Ocupa el espacio restante */
+    min-width: 0; /* Permite que el texto se recorte en lugar de desbordar */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.moreText p {
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    color: var(--color-1);
+}
+
+.moreText span {
+    font-family: "Inter-SemiBold";
+    font-size: 16px;
+    color: var(--color-1);
+    display: block; 
+    overflow: hidden;    
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
 }
