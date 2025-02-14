@@ -45,8 +45,8 @@ nav {
 .searchBar {
     margin: 0px 21px;
     padding: 12px;
-    background: beige;
     display: flex;
+    background: var(--color-1);
     justify-content: space-between;
     border-radius: 10px;
 }
@@ -79,6 +79,7 @@ nav {
     overflow: scroll;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 8px 0px;
 }
 
 .carrouselOpt a{
@@ -172,11 +173,11 @@ nav {
 }
 
 .text {
-    display: flex; /* Cambia inline por flex para que flexbox funcione */
+    display: flex;
     flex-direction: column;
     gap: 6px;
-    width: 47svw; /* Mantiene un tamaño definido */
-    min-width: 0; /* Clave para evitar problemas de flexbox */
+    width: 47svw; 
+    min-width: 0;
 }
 
 .text p {
@@ -208,8 +209,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 4px;
-    flex: 1; /* Ocupa el espacio restante */
-    min-width: 0; /* Permite que el texto se recorte en lugar de desbordar */
+    flex: 1; 
+    min-width: 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -230,4 +231,114 @@ nav {
     overflow: hidden;    
     white-space: nowrap;    
     text-overflow: ellipsis; 
+}
+
+.ladoBot {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 21px 35px 20px;
+    gap: 16px;
+}
+
+.ladoBot article:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+.ladoBot article h3:nth-child(1){
+    font-family: "Inter-SemiBold";   
+    font-size: 14px;
+}
+
+.ladoBot article h3:nth-child(2){
+    font-family: "Inter-Regular";   
+    font-size: 12px;
+    color: var(--color-3);
+}
+
+.carrouselBot {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.cardBot {
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.080);
+    gap: 9px;
+}
+
+.textoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.textoInfo h2 {
+    font-family: "Inter-SemiBold";
+    font-size: 10px;
+    display: block; 
+    width: 100%; 
+    overflow: hidden;    
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
+}
+
+.textoInfo p:nth-child(2) {
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    display: block; 
+    width: 100%; 
+    overflow: hidden;    
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
+}
+
+.imgLoc1 {
+    width: 9px;
+    height: 11px;
+    margin-bottom: -2px;
+    margin-right: 7px;
+}
+
+.imgCal1 {
+    width: 10px;
+    margin-bottom: -2px;
+    margin-right: 6px;
+}
+
+
+.textoInfo p:nth-child(3) {
+    font-family: "Inter-Regular";
+    font-size: 10px;
+    display: block; 
+    width: 100%; 
+    overflow: hidden;    
+    white-space: nowrap;    
+    text-overflow: ellipsis; 
+}
+
+.textValue {
+    font-family: "Inter-SemiBold";
+    font-size: 12px;
+    color: var(--color-4);
+}   
+
+.tagPrice {
+    width: 12px;
+    margin-bottom: -2px;
+    margin-right: 5px;
+    margin-left: -2px;
+}
+
+#halfBg {
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 400px;
 }
