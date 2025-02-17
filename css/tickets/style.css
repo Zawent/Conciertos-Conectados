@@ -115,6 +115,10 @@ header img:nth-child(1) {
     gap: 16px;
 }
 
+.barsBottom img{
+    width: 70svw;
+}
+
 .barsBottom p {
     font-family: "Inter-Regular";
     font-size: 12px;
