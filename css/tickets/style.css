@@ -9,7 +9,7 @@
 body {
     background: rgb(145,181,253);
     background: linear-gradient(153deg, rgba(145,181,253,1) 0%, rgba(240,221,255,1) 62%);
-    height: 100svh;
+    min-height: 100svh;    
 }
 
 .ticket {
@@ -41,6 +41,7 @@ body {
 }
 
 .info {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-right: 15px;
@@ -78,8 +79,8 @@ body {
     height: 20px;
     background: rgb(240,221,255,1) 62%;
     border-radius: 50%;
-    bottom: 140px;
-    left: 2px;
+    bottom: -20px;
+    left: -38px;
 }
 
 #bola2 {
@@ -89,6 +90,19 @@ body {
     height: 20px;
     background: rgb(240,221,255,1) 62%;
     border-radius: 50%;
-    bottom: 140px;
-    right: 2px;
+    bottom: -20px;
+    right: -38px;
+}
+
+.barsBottom {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 0px;
+    align-items: center;
+    gap: 16px;
+}
+
+.barsBottom p {
+    font-family: "Inter-Regular";
+    font-size: 12px;
 }
