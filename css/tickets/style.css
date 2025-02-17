@@ -12,6 +12,19 @@ body {
     min-height: 100svh;    
 }
 
+header {
+    width: 100svw;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 23px 46px;
+}
+
+header img:nth-child(1) {
+    padding: 12px 13px;
+    background: hsl(0, 0%, 100%, 0.200);
+    border-radius: 6px;
+}
+
 .ticket {
     display: flex;
     flex-direction: column;
