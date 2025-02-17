@@ -1,0 +1,13 @@
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(145,181,253);
+    background: linear-gradient(153deg, rgba(145,181,253,1) 0%, rgba(240,221,255,1) 62%);
+    height: 100svh;
+}
